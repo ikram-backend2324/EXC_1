@@ -27,10 +27,10 @@ maximum = int(len(array))
 minimum = 1
 
 def getInfo(x = minimum, y=maximum):
-    result = array[x:y]
+    result = array[x-1:y]
     storage = ""
     for item in result:
-         storage += f"{str(item)}\n"
+         storage += f"ID: {item[id]}\nName: {item['name']}\nAge: {item['age']}\n"
     return storage
 
 print(getInfo(1, 5))
